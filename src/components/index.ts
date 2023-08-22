@@ -1,3 +1,4 @@
 import SidebarItem from "./sidebar-item";
+import CardInformation from "./card-information";
 
-export { SidebarItem };
+export { SidebarItem, CardInformation };
