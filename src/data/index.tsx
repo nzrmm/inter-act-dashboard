@@ -74,4 +74,17 @@ export const earningDateOptions: IOption[] = [
       },
     },
   },
+  {
+    label: "Last Month",
+    value: {
+      sales: {
+        percentage: 85,
+        total: "465K",
+      },
+      orders: {
+        percentage: 75,
+        total: "342K",
+      },
+    },
+  },
 ];
