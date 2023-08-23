@@ -5,6 +5,7 @@ import ICTrophy from "./ic-trophy";
 import ICWallet from "./ic-wallet";
 import ICSetting from "./ic-setting";
 import ICRevenue from "./ic-revenue";
+import ICArrowUp from "./ic-arrow-up";
 import ICCalendar from "./ic-calendar";
 import ICPieChart from "./ic-pie-chart";
 import ICNotification from "./ic-notification";
@@ -17,6 +18,7 @@ export {
   ICWallet,
   ICSetting,
   ICRevenue,
+  ICArrowUp,
   ICPieChart,
   ICCalendar,
   ICNotification,
