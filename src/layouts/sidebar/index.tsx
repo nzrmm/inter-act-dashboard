@@ -15,12 +15,7 @@ const Sidebar = () => {
       <div className={cx("flex flex-col gap-2 py-8")}>
         {ROUTES.map((item, index) => {
           return (
-            <SidebarItem
-              key={index}
-              to={item.to}
-              icon={item.icon}
-              value={item.value}
-            >
+            <SidebarItem key={index} data={item}>
               {item.name}
             </SidebarItem>
           );
