@@ -1,5 +1,7 @@
 import cx from "classnames";
 
+import { Dot } from "@/components/commons";
+
 const Header = () => {
   return (
     <header
@@ -12,11 +14,7 @@ const Header = () => {
             "bg-[#B5B4B4] border border-white"
           )}
         >
-          <div
-            className={cx(
-              "absolute -right-1 top-1 w-2 h-2 rounded-full bg-[#5CCC5A]"
-            )}
-          ></div>
+          <Dot customClassName={cx("absolute -right-1 top-1 bg-[#5CCC5A]")} />
         </div>
 
         <p className={cx("font-medium text-sm")}>Hello, User</p>
