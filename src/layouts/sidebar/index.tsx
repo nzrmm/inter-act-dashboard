@@ -1,6 +1,6 @@
 import cx from "classnames";
 
-import { SidebarItem } from "@/components";
+import { SidebarItem } from "@/components/layouts";
 import { logo } from "@/assets/images";
 
 import { ROUTES } from "@/constants";

@@ -4,7 +4,8 @@ import {
   CardEarnings,
   CardInformation,
   CardActivityOverview,
-} from "@/components";
+} from "@/routes/home/components";
+
 import { informations } from "@/data";
 
 const Home = () => {
