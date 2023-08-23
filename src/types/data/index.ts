@@ -43,3 +43,8 @@ export type IActivityOverview =
   | IPublishedActivity
   | ISubscribedActivity
   | ISuspendedActivity;
+
+export type IOption = {
+  label: string;
+  value: any;
+};
