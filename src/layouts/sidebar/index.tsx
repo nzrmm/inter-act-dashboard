@@ -1,9 +1,9 @@
 import cx from "classnames";
 
-import { SidebarItem } from "../../components";
-import { logo } from "../../assets/images";
+import { SidebarItem } from "@/components";
+import { logo } from "@/assets/images";
 
-import { ROUTES } from "../../constants";
+import { ROUTES } from "@/constants";
 
 const Sidebar = () => {
   return (

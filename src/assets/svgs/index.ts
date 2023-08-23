@@ -1,14 +1,14 @@
-import ICHome from "./ic-home";
-import ICReport from "./ic-report";
-import ICLogout from "./ic-logout";
-import ICTrophy from "./ic-trophy";
-import ICWallet from "./ic-wallet";
-import ICSetting from "./ic-setting";
-import ICRevenue from "./ic-revenue";
-import ICArrowUp from "./ic-arrow-up";
-import ICCalendar from "./ic-calendar";
-import ICPieChart from "./ic-pie-chart";
-import ICNotification from "./ic-notification";
+import ICHome from "@/assets/svgs/ic-home";
+import ICReport from "@/assets/svgs/ic-report";
+import ICLogout from "@/assets/svgs/ic-logout";
+import ICTrophy from "@/assets/svgs/ic-trophy";
+import ICWallet from "@/assets/svgs/ic-wallet";
+import ICSetting from "@/assets/svgs/ic-setting";
+import ICRevenue from "@/assets/svgs/ic-revenue";
+import ICArrowUp from "@/assets/svgs/ic-arrow-up";
+import ICCalendar from "@/assets/svgs/ic-calendar";
+import ICPieChart from "@/assets/svgs/ic-pie-chart";
+import ICNotification from "@/assets/svgs/ic-notification";
 
 export {
   ICHome,

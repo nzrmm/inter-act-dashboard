@@ -1,4 +1,4 @@
-import { IInformation, IActivityOverview } from "../types/data";
+import { IInformation, IActivityOverview } from "@/types/data";
 
 import {
   ICTrophy,
@@ -6,7 +6,7 @@ import {
   ICRevenue,
   ICPieChart,
   ICCalendar,
-} from "../assets/svgs";
+} from "@/assets/svgs";
 
 export const informations: IInformation[] = [
   { icon: <ICPieChart />, name: "Total Cost", value: "$31.868" },

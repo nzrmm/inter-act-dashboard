@@ -1,7 +1,7 @@
 import cx from "classnames";
 import { Outlet } from "react-router-dom";
 
-import { Header, Sidebar } from "../../layouts";
+import { Header, Sidebar } from "@/layouts";
 
 const Root = () => {
   return (

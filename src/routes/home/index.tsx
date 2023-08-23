@@ -1,7 +1,7 @@
 import cx from "classnames";
 
-import { CardInformation, CardActivityOverview } from "../../components";
-import { informations } from "../../data";
+import { CardInformation, CardActivityOverview } from "@/components";
+import { informations } from "@/data";
 
 const Home = () => {
   return (

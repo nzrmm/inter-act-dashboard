@@ -1,3 +1,3 @@
-import logo from "./logo.webp";
+import logo from "@/assets/images/logo.webp";
 
 export { logo };

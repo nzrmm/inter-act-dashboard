@@ -1,10 +1,10 @@
 import cx from "classnames";
 
-import { Timeline, TimelineItem } from "../../components/commons";
-import { ICArrowUp } from "../../assets/svgs";
+import { Timeline, TimelineItem } from "@/components/commons";
+import { ICArrowUp } from "@/assets/svgs";
 
-import { activityOverviews } from "../../data";
-import { IActivityOverview } from "../../types/data";
+import { activityOverviews } from "@/data";
+import { IActivityOverview } from "@/types/data";
 
 const CardActivityOverview = () => {
   const renderTimelineDescription = (item: IActivityOverview) => {

@@ -1,4 +1,4 @@
-import { IRoutes } from "../types/constants";
+import { IRoutes } from "@/types/constants";
 
 import {
   ICHome,
@@ -6,7 +6,7 @@ import {
   ICLogout,
   ICSetting,
   ICNotification,
-} from "../assets/svgs";
+} from "@/assets/svgs";
 
 export const ROUTES: IRoutes[] = [
   { to: "/", name: "Home", icon: <ICHome /> },

@@ -1,5 +1,5 @@
-import SidebarItem from "./sidebar-item";
-import CardInformation from "./card-information";
-import CardActivityOverview from "./card-activity-overview";
+import SidebarItem from "@/components/sidebar-item";
+import CardInformation from "@/components/card-information";
+import CardActivityOverview from "@/components/card-activity-overview";
 
 export { SidebarItem, CardInformation, CardActivityOverview };

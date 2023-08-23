@@ -1,6 +1,6 @@
 import cx from "classnames";
 
-import { IInformation } from "../../types/data";
+import { IInformation } from "@/types/data";
 
 type ICardInformation = {
   data: IInformation;

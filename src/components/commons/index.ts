@@ -1,4 +1,4 @@
-import Timeline from "./timeline";
-import TimelineItem from "./timeline-item";
+import Timeline from "@/components/commons/timeline";
+import TimelineItem from "@/components/commons/timeline-item";
 
 export { Timeline, TimelineItem };

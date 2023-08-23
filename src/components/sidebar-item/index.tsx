@@ -2,7 +2,7 @@ import React from "react";
 import cx from "classnames";
 import { NavLink } from "react-router-dom";
 
-import { IRoutes } from "../../types/constants";
+import { IRoutes } from "@/types/constants";
 
 type ISidebarItem = React.PropsWithChildren<{
   data: IRoutes;
