@@ -1,4 +1,4 @@
-import { IInformation, IActivityOverview } from "@/types/data";
+import { IInformation, IActivityOverview, IOption } from "@/types/data";
 
 import {
   ICTrophy,
@@ -44,5 +44,34 @@ export const activityOverviews: IActivityOverview[] = [
     postName: "Post Name",
     postAuthor: "Nick Mark",
     date: "11 JUL 9:10 PM",
+  },
+];
+
+export const earningDateOptions: IOption[] = [
+  {
+    label: "Last Week",
+    value: {
+      sales: {
+        percentage: 80,
+        total: "251K",
+      },
+      orders: {
+        percentage: 60,
+        total: "176K",
+      },
+    },
+  },
+  {
+    label: "2 Weeks ago",
+    value: {
+      sales: {
+        percentage: 50,
+        total: "165K",
+      },
+      orders: {
+        percentage: 40,
+        total: "147K",
+      },
+    },
   },
 ];

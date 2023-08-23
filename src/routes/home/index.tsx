@@ -1,6 +1,10 @@
 import cx from "classnames";
 
-import { CardInformation, CardActivityOverview } from "@/components";
+import {
+  CardEarnings,
+  CardInformation,
+  CardActivityOverview,
+} from "@/components";
 import { informations } from "@/data";
 
 const Home = () => {
@@ -21,9 +25,15 @@ const Home = () => {
       </div>
 
       <div className={cx("flex gap-6")}>
-        <div className={cx("w-3/5")}>Content</div>
+        <div className={cx("w-3/5")}>
+          <div className={cx("flex")}>
+            <CardEarnings />
+          </div>
+        </div>
 
-        <CardActivityOverview />
+        <div className={cx("w-2/5 ")}>
+          <CardActivityOverview />
+        </div>
       </div>
     </section>
   );
