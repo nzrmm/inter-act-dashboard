@@ -30,10 +30,17 @@ const options: ChartOptions<"bar"> = {
     legend: {
       display: false,
     },
+    tooltip: {
+      intersect: false,
+    },
   },
   scales: {
     x: { display: false },
     y: { display: false },
+  },
+  interaction: {
+    mode: "index",
+    intersect: false,
   },
 };
 
@@ -41,6 +48,7 @@ const data: ChartData<"bar"> = {
   labels: dataOrder.values.map((item) => item.label),
   datasets: [
     {
+      label: "Orders",
       data: dataOrder.values.map((item) => item.percentage),
       backgroundColor: "#FF814A",
       barThickness: 8,

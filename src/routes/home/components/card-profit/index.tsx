@@ -32,6 +32,9 @@ export const options: ChartOptions<"line"> = {
     legend: {
       display: false,
     },
+    tooltip: {
+      intersect: false,
+    },
   },
   scales: {
     x: { display: false },
@@ -41,6 +44,10 @@ export const options: ChartOptions<"line"> = {
         stepSize: 10,
       },
     },
+  },
+  interaction: {
+    mode: "index",
+    intersect: false,
   },
 };
 
