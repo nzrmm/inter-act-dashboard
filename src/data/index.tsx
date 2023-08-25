@@ -1,8 +1,8 @@
 import {
   IOption,
-  IDataOrder,
   IInformation,
   IActivityOverview,
+  IDataChartWithTotal,
 } from "@/types/data";
 
 import {
@@ -94,7 +94,7 @@ export const earningDateOptions: IOption[] = [
   },
 ];
 
-export const dataOrder: IDataOrder = {
+export const dataOrder: IDataChartWithTotal = {
   total: "189k",
   values: [
     {
@@ -116,6 +116,36 @@ export const dataOrder: IDataOrder = {
     {
       label: "May",
       percentage: 60,
+    },
+  ],
+};
+
+export const dataProfit: IDataChartWithTotal = {
+  total: "8,29k",
+  values: [
+    {
+      label: "January",
+      percentage: 0,
+    },
+    {
+      label: "February",
+      percentage: 20,
+    },
+    {
+      label: "March",
+      percentage: 10,
+    },
+    {
+      label: "April",
+      percentage: 30,
+    },
+    {
+      label: "May",
+      percentage: 20,
+    },
+    {
+      label: "June",
+      percentage: 40,
     },
   ],
 };

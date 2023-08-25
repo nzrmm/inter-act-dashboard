@@ -49,7 +49,12 @@ export type IOption = {
   value: any;
 };
 
-export type IDataOrder = {
+export type IDataChart = {
+  label: string;
+  percentage: number;
+};
+
+export type IDataChartWithTotal = {
   total: string | number;
-  values: { label: string; percentage: number }[];
+  values: IDataChart[];
 };
