@@ -52,7 +52,7 @@ const data: ChartData<"bar"> = {
 
 const CardOrders = () => {
   return (
-    <div className={cx("w-[183px] h-full bg-dark-04 rounded-md px-6 py-5")}>
+    <div className={cx("w-3/12 h-full bg-dark-04 rounded-md px-6 py-5")}>
       <div className={cx("mb-8")}>
         <p className={cx("font-medium mb-2")}>Orders</p>
         <p className={cx("font-medium text-3xl text-[#FF814A]")}>

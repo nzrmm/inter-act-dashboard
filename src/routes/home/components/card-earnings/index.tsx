@@ -16,7 +16,7 @@ const CardEarnings = () => {
   const [data, setData] = useState<IOption>(earningDateOptions[0]);
 
   return (
-    <div className={cx("w-[285px] bg-dark-04 rounded-md p-5")}>
+    <div className={cx("w-6/12 bg-dark-04 rounded-md p-5")}>
       <div className={cx("flex justify-between items-center mb-6")}>
         <p className={cx("font-bold")}>Earnings</p>
         <Dropdown
