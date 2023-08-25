@@ -52,7 +52,7 @@ const CardActivityOverview = () => {
   };
 
   return (
-    <div className={cx("w-full bg-dark-04 p-6 rounded-lg")}>
+    <div className={cx("w-full h-full bg-dark-04 p-6 rounded-lg")}>
       <div className={cx("mb-6")}>
         <p className={cx("font-bold text-xl text-[#D3D3D3] mb-2")}>
           Activity overview
