@@ -1,6 +1,7 @@
 import {
   IOption,
   IInformation,
+  IDataTotalProfit,
   IActivityOverview,
   IDataChartWithTotal,
 } from "@/types/data";
@@ -149,3 +150,15 @@ export const dataProfit: IDataChartWithTotal = {
     },
   ],
 };
+
+export const dataTotalProfit: IDataTotalProfit[] = [
+  { label: "Jan", earning: 120, expense: -180 },
+  { label: "Feb", earning: 210, expense: -90 },
+  { label: "Mar", earning: 400, expense: -60 },
+  { label: "Apr", earning: 300, expense: -200 },
+  { label: "May", earning: 150, expense: -60 },
+  { label: "Jun", earning: 90, expense: -90 },
+  { label: "Jul", earning: 220, expense: -100 },
+  { label: "Aug", earning: 280, expense: -80 },
+  { label: "Sep", earning: 100, expense: -120 },
+];

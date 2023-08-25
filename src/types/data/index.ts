@@ -58,3 +58,9 @@ export type IDataChartWithTotal = {
   total: string | number;
   values: IDataChart[];
 };
+
+export type IDataTotalProfit = {
+  label: string;
+  earning: number;
+  expense: number;
+};
