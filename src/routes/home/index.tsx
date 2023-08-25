@@ -1,6 +1,7 @@
 import cx from "classnames";
 
 import {
+  CardOrders,
   CardEarnings,
   CardInformation,
   CardActivityOverview,
@@ -27,8 +28,9 @@ const Home = () => {
 
       <div className={cx("flex gap-6")}>
         <div className={cx("w-3/5")}>
-          <div className={cx("flex")}>
+          <div className={cx("flex gap-4 h-[220px]")}>
             <CardEarnings />
+            <CardOrders />
           </div>
         </div>
 

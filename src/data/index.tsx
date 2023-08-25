@@ -1,4 +1,9 @@
-import { IInformation, IActivityOverview, IOption } from "@/types/data";
+import {
+  IOption,
+  IDataOrder,
+  IInformation,
+  IActivityOverview,
+} from "@/types/data";
 
 import {
   ICTrophy,
@@ -88,3 +93,29 @@ export const earningDateOptions: IOption[] = [
     },
   },
 ];
+
+export const dataOrder: IDataOrder = {
+  total: "189k",
+  values: [
+    {
+      label: "January",
+      percentage: 30,
+    },
+    {
+      label: "February",
+      percentage: 80,
+    },
+    {
+      label: "March",
+      percentage: 50,
+    },
+    {
+      label: "April",
+      percentage: 20,
+    },
+    {
+      label: "May",
+      percentage: 60,
+    },
+  ],
+};

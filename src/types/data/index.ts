@@ -48,3 +48,8 @@ export type IOption = {
   label: string;
   value: any;
 };
+
+export type IDataOrder = {
+  total: string | number;
+  values: { label: string; percentage: number }[];
+};
