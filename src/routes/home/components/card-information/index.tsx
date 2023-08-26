@@ -13,7 +13,7 @@ const CardInformation = ({ data, isFirst }: ICardInformation) => {
       className={cx(
         "w-full flex items-center gap-5 rounded-lg px-5 py-[22px]",
         {
-          "bg-[#0BB885]": isFirst,
+          "bg-custom-green-01": isFirst,
           "bg-dark-04": !isFirst,
         }
       )}
@@ -24,7 +24,7 @@ const CardInformation = ({ data, isFirst }: ICardInformation) => {
         <p
           className={cx("text-sm", {
             "font-bold": isFirst,
-            "font-medium text-[#6C747D]": !isFirst,
+            "font-medium text-custom-gray-01": !isFirst,
           })}
         >
           {data.value}

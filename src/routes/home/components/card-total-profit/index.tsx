@@ -29,12 +29,8 @@ const options: ChartOptions<"bar"> = {
   responsive: true,
   maintainAspectRatio: false,
   plugins: {
-    legend: {
-      display: false,
-    },
-    tooltip: {
-      intersect: false,
-    },
+    legend: { display: false },
+    tooltip: { intersect: false },
   },
   scales: {
     x: {
@@ -96,13 +92,13 @@ const CardTotalProfit = () => {
 
         <div className={cx("flex items-center gap-5")}>
           <div className={cx("flex items-center gap-2")}>
-            <Dot customClassName={cx("w-2.5 h-2.5 bg-[#0BB885]")} />
-            <p className={cx("text-sm text-[#828282]")}>Earning</p>
+            <Dot customClassName={cx("w-2.5 h-2.5 bg-custom-green-01")} />
+            <p className={cx("text-sm text-custom-gray-05")}>Earning</p>
           </div>
 
           <div className={cx("flex items-center gap-2")}>
-            <Dot customClassName={cx("w-2.5 h-2.5 bg-[#FF814A]")} />
-            <p className={cx("text-sm text-[#828282]")}>Expense</p>
+            <Dot customClassName={cx("w-2.5 h-2.5 bg-custom-orange-01")} />
+            <p className={cx("text-sm text-custom-gray-05")}>Expense</p>
           </div>
         </div>
       </div>

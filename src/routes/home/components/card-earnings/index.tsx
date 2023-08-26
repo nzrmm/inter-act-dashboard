@@ -51,20 +51,20 @@ const CardEarnings = () => {
 
         <div className={cx("flex-1")}>
           <div className={cx("flex items-center gap-4 mb-7")}>
-            <Dot customClassName={cx("bg-[#0BB885]")} />
+            <Dot customClassName={cx("bg-custom-green-01")} />
             <div>
               <p className={cx("text-xs")}>Total Sales</p>
-              <p className={cx("text-sm text-[#8A92A6]")}>
+              <p className={cx("text-sm text-custom-gray-02")}>
                 {data?.value?.sales?.total}
               </p>
             </div>
           </div>
 
           <div className={cx("flex items-center gap-4")}>
-            <Dot customClassName={cx("bg-[#FF814A]")} />
+            <Dot customClassName={cx("bg-custom-orange-01")} />
             <div>
               <p className={cx("text-xs")}>Total Orders</p>
-              <p className={cx("text-sm text-[#8A92A6]")}>
+              <p className={cx("text-sm text-custom-gray-02")}>
                 {data?.value?.orders?.total}
               </p>
             </div>

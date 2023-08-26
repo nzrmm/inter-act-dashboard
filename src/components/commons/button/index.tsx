@@ -15,7 +15,7 @@ const Button = ({ id, children, size, variant, ...props }: IButton) => {
   }[size];
 
   const variantClass = {
-    primary: "bg-[#0BB885] text-white hover:bg-[#0BB885]/90",
+    primary: "bg-custom-green-01 text-white hover:bg-custom-green-01/90",
   }[variant];
 
   return (

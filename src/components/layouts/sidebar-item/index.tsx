@@ -13,7 +13,7 @@ const SidebarItem = ({ data, children }: ISidebarItem) => {
     <NavLink
       to={data.to}
       className={({ isActive }) => {
-        return cx("font-medium text-[#6C747D] rounded-lg px-3 py-[14px]", {
+        return cx("font-medium text-custom-gray-01 rounded-lg px-3 py-3.5", {
           "bg-dark-03": isActive,
         });
       }}
@@ -27,7 +27,7 @@ const SidebarItem = ({ data, children }: ISidebarItem) => {
         {data?.value && (
           <div
             className={cx(
-              "w-[18px] h-[18px] flex justify-center items-center bg-[#98FFE0] rounded-[4px]"
+              "w-[18px] h-[18px] flex justify-center items-center bg-custom-green-02 rounded-[4px]"
             )}
           >
             <span className={cx("text-xs font-medium")}>{data.value}</span>

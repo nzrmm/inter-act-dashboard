@@ -54,7 +54,7 @@ const CardActivityOverview = () => {
   return (
     <div className={cx("w-full h-full bg-dark-04 p-6 rounded-lg")}>
       <div className={cx("mb-6")}>
-        <p className={cx("font-bold text-xl text-[#D3D3D3] mb-2")}>
+        <p className={cx("font-bold text-xl text-custom-gray-03 mb-2")}>
           Activity overview
         </p>
         <div className={cx("flex items-center gap-2")}>
@@ -67,10 +67,10 @@ const CardActivityOverview = () => {
         {activityOverviews.map((item, index) => {
           return (
             <TimelineItem key={index}>
-              <p className={cx("text-sm text-[#D3D3D3] mb-1")}>
+              <p className={cx("text-sm text-custom-gray-03 mb-1")}>
                 {renderTimelineDescription(item)}
               </p>
-              <p className={cx("text-xs text-[#9F9F9F]")}>{item.date}</p>
+              <p className={cx("text-xs text-custom-gray-04")}>{item.date}</p>
             </TimelineItem>
           );
         })}

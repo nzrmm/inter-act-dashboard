@@ -67,7 +67,7 @@ const CardBalance = () => {
   return (
     <div
       className={cx(
-        "w-1/3 h-full bg-dark-04 rounded-e-md px-5 py-6 border-l border-[#2E4B85]"
+        "w-1/3 h-full bg-dark-04 rounded-e-md px-5 py-6 border-l border-dark-05"
       )}
     >
       <div className={cx("flex flex-col items-center")}>
@@ -80,7 +80,7 @@ const CardBalance = () => {
 
         <div className={cx("mb-9")}>
           <p className={cx("font-bold text-4xl mb-3")}>$842.98</p>
-          <p className={cx("font-semibold text-[10px] text-[#828282]")}>
+          <p className={cx("font-semibold text-[10px] text-custom-gray-05")}>
             Latest Month Balance $426.20k
           </p>
         </div>

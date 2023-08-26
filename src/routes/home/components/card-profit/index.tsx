@@ -29,12 +29,8 @@ export const options: ChartOptions<"line"> = {
   responsive: true,
   maintainAspectRatio: false,
   plugins: {
-    legend: {
-      display: false,
-    },
-    tooltip: {
-      intersect: false,
-    },
+    legend: { display: false },
+    tooltip: { intersect: false },
   },
   scales: {
     x: { display: false },
@@ -69,7 +65,9 @@ const CardProfit = () => {
     <div className={cx("w-3/12 h-full bg-dark-04 rounded-md px-6 py-5")}>
       <div className={cx("mb-8")}>
         <p className={cx("font-medium mb-2")}>Profit</p>
-        <p className={cx("font-medium text-3xl text-[#0BB885]")}>{"8.24k"}</p>
+        <p className={cx("font-medium text-3xl text-custom-green-01")}>
+          {"8.24k"}
+        </p>
       </div>
 
       <div>
