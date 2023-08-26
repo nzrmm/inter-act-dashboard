@@ -6,6 +6,7 @@ import { ICChevronDown } from "@/assets/svgs";
 import { IOption } from "@/types/data";
 
 type IDropdown = {
+  variant: "default" | "outline";
   options: IOption[];
   customClassName?: string;
   wrapperClassName?: string;
@@ -14,7 +15,7 @@ type IDropdown = {
 
 const Dropdown = ({ options, onChange, ...props }: IDropdown) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [selected, setSelected] = useState<IOption>(options[0]);
+  const [selected, setSelected] = useState<IOption>(options[0] || {});
 
   const handleSetToggleOpen = () => {
     setIsOpen(!isOpen);
@@ -33,15 +34,19 @@ const Dropdown = ({ options, onChange, ...props }: IDropdown) => {
         <div
           className={cx(
             "w-full flex justify-between items-center gap-1",
-            "bg-transparent cursor-pointer py-2"
+            "text-[10px] bg-transparent cursor-pointer",
+            {
+              "font-bold text-[#0BB885] border border-[#0BB885] rounded-md px-3 py-2":
+                props.variant === "outline",
+              "text-[#5C6CA5]": props.variant === "default",
+            }
           )}
           onClick={handleSetToggleOpen}
         >
-          <p className={cx("text-[10px] text-[#5C6CA5]")}>
-            {selected.label || "Chosee"}
-          </p>
-
-          <ICChevronDown />
+          <p>{selected.label || "Chosee"}</p>
+          <ICChevronDown
+            color={props.variant === "outline" ? "#0BB885" : "#8A92A6"}
+          />
         </div>
 
         {isOpen && (
@@ -72,6 +77,7 @@ const Dropdown = ({ options, onChange, ...props }: IDropdown) => {
 Dropdown.defaultProps = {
   id: "dropdown-input",
   name: "dropdownInput",
+  variant: "default",
   wrapperClassName: "w-full",
 };
 

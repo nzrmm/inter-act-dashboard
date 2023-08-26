@@ -1,7 +1,7 @@
-const ICChevronDown = () => (
+const ICChevronDown = ({ color }: { color: string }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="none">
     <path
-      stroke="#8A92A6"
+      stroke={color}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={0.625}
@@ -9,4 +9,8 @@ const ICChevronDown = () => (
     />
   </svg>
 );
+
+ICChevronDown.defaultProps = {
+  color: "#8A92A6",
+};
 export default ICChevronDown;
