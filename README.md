@@ -1,27 +1,35 @@
-# React + TypeScript + Vite
+# Inter-act Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Slicing UI Inter-act Dashboard Using React and Tailwind CSS
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Loom Record:
 
-## Expanding the ESLint configuration
+- https://www.loom.com/share/4a4856ec15cf47cca50b540ccb385e3a?sid=e86bca29-db74-4b0b-ba0a-a673bac097dd
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- React + Typescript (Frontend Library)
+- TailwindCSS (CSS Library)
+- React Chart (Chart Library)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone git@github.com:nzrmm/inter-act-dashboard.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Install dependencies
+
+```bash
+  yarn
+```
+
+Start the server
+
+```bash
+  yarn dev
+```
