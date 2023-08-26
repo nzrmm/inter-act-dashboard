@@ -1,4 +1,5 @@
 import cx from "classnames";
+import { Link } from "react-router-dom";
 
 import {
   CardProfit,
@@ -29,7 +30,7 @@ const Home = () => {
         })}
       </div>
 
-      <div className={cx("grid grid-cols-5 h-[600px] gap-6")}>
+      <div className={cx("grid grid-cols-5 h-[600px] gap-6 mb-9")}>
         <div className={cx("col-span-3")}>
           <div className={cx("h-full flex flex-col gap-5")}>
             <div className={cx("flex gap-4 h-[220px]")}>
@@ -47,6 +48,15 @@ const Home = () => {
         <div className={cx("col-span-2")}>
           <CardActivityOverview />
         </div>
+      </div>
+
+      <div className={cx("flex items-center gap-6")}>
+        <Link to={"/"} className={cx("text-xs text-custom-gray-02")}>
+          Privacy Policy
+        </Link>
+        <Link to={"/"} className={cx("text-xs text-custom-gray-02")}>
+          Terms of Use
+        </Link>
       </div>
     </section>
   );
