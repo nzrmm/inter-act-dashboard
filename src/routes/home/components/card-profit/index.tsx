@@ -33,7 +33,11 @@ export const options: ChartOptions<"line"> = {
     tooltip: { intersect: false },
   },
   scales: {
-    x: { display: false },
+    x: {
+      grid: { color: "#151A2E", lineWidth: 3 },
+      border: { width: 0, dash: [8, 8] },
+      ticks: { display: false },
+    },
     y: {
       display: false,
       ticks: {
@@ -55,7 +59,22 @@ export const data: ChartData<"line"> = {
       data: dataProfit.values.map((item) => item.percentage),
       borderColor: "#0BB885",
       borderWidth: 3,
-      pointRadius: 0,
+      pointRadius: (ctx) => {
+        const pointsLength = ctx.chart.data.labels.length - 1;
+        const pointsArray = [];
+
+        for (let i = 0; i <= pointsLength; i++) {
+          [pointsLength, 0].includes(i)
+            ? pointsArray.push(8)
+            : pointsArray.push(0);
+        }
+
+        return pointsArray;
+      },
+      pointHoverRadius: 10,
+      pointBorderWidth: 6,
+      pointHoverBorderWidth: 6,
+      pointBackgroundColor: "#1C243F",
     },
   ],
 };
