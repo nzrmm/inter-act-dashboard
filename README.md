@@ -11,6 +11,7 @@ Slicing UI Inter-act Dashboard Using React and Tailwind CSS
 - React + Typescript (Frontend Library)
 - TailwindCSS (CSS Library)
 - React Chart (Chart Library)
+- Eslint + Prettier
 
 ## Run Locally
 
