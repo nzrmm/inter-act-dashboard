@@ -51,6 +51,11 @@ export const options: ChartOptions<"line"> = {
   },
 };
 
+const pointRadiusArray = dataProfit.values.map((_, index) => {
+  const pointLength = dataProfit.values.length - 1;
+  return [pointLength, 0].includes(index) ? 8 : 0;
+});
+
 export const data: ChartData<"line"> = {
   labels: dataProfit.values.map((item) => item.label),
   datasets: [
@@ -59,18 +64,7 @@ export const data: ChartData<"line"> = {
       data: dataProfit.values.map((item) => item.percentage),
       borderColor: "#0BB885",
       borderWidth: 3,
-      pointRadius: (ctx) => {
-        const pointsLength = ctx.chart.data.labels.length - 1;
-        const pointsArray = [];
-
-        for (let i = 0; i <= pointsLength; i++) {
-          [pointsLength, 0].includes(i)
-            ? pointsArray.push(8)
-            : pointsArray.push(0);
-        }
-
-        return pointsArray;
-      },
+      pointRadius: pointRadiusArray,
       pointHoverRadius: 10,
       pointBorderWidth: 6,
       pointHoverBorderWidth: 6,
