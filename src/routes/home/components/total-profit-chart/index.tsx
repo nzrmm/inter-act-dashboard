@@ -84,7 +84,7 @@ const data: ChartData<"bar"> = {
   ],
 };
 
-const CardTotalProfit = () => {
+const TotalProfitChart = () => {
   return (
     <div className={cx("w-2/3 h-full bg-dark-04 rounded-s-md px-5 py-6")}>
       <div className={cx("flex justify-between items-center mb-9")}>
@@ -110,4 +110,4 @@ const CardTotalProfit = () => {
   );
 };
 
-export default CardTotalProfit;
+export default TotalProfitChart;

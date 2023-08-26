@@ -6,7 +6,7 @@ import { ICArrowUp } from "@/assets/svgs";
 import { dataActivityOverviews } from "@/data";
 import { IDataActivityOverview } from "@/types/data";
 
-const CardActivityOverview = () => {
+const ActivityOverviewCard = () => {
   const renderTimelineDescription = (item: IDataActivityOverview) => {
     switch (item.type) {
       case "mentioned":
@@ -79,4 +79,4 @@ const CardActivityOverview = () => {
   );
 };
 
-export default CardActivityOverview;
+export default ActivityOverviewCard;

@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import { Breadcrumb } from "@/components/commons";
 
 import {
-  CardProfit,
-  CardOrders,
-  CardBalance,
-  CardEarnings,
-  CardInformation,
-  CardTotalProfit,
-  CardActivityOverview,
+  ProfitChart,
+  OrderChart,
+  BalanceChart,
+  EarningChart,
+  TotalProfitChart,
+  InformationCard,
+  ActivityOverviewCard,
 } from "@/routes/home/components";
 
 import { dataInformations } from "@/data";
@@ -28,7 +28,7 @@ const Home = () => {
       <div className={cx("grid grid-cols-5 gap-6 mb-6")}>
         {dataInformations.map((item, index) => {
           return (
-            <CardInformation key={index} data={item} isFirst={index === 0} />
+            <InformationCard key={index} data={item} isFirst={index === 0} />
           );
         })}
       </div>
@@ -37,19 +37,19 @@ const Home = () => {
         <div className={cx("col-span-3")}>
           <div className={cx("h-full flex flex-col gap-5")}>
             <div className={cx("flex gap-4 h-[220px]")}>
-              <CardEarnings />
-              <CardOrders />
-              <CardProfit />
+              <EarningChart />
+              <OrderChart />
+              <ProfitChart />
             </div>
             <div className={cx("flex-1 flex")}>
-              <CardTotalProfit />
-              <CardBalance />
+              <TotalProfitChart />
+              <BalanceChart />
             </div>
           </div>
         </div>
 
         <div className={cx("col-span-2")}>
-          <CardActivityOverview />
+          <ActivityOverviewCard />
         </div>
       </div>
 

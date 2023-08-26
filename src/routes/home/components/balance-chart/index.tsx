@@ -63,7 +63,7 @@ const data: ChartData<"line"> = {
   ],
 };
 
-const CardBalance = () => {
+const BalanceChart = () => {
   return (
     <div
       className={cx(
@@ -99,4 +99,4 @@ const CardBalance = () => {
   );
 };
 
-export default CardBalance;
+export default BalanceChart;

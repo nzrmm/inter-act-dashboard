@@ -1,13 +1,13 @@
 import cx from "classnames";
 
-import { IInformation } from "@/types/data";
+import { IDataInformation } from "@/types/data";
 
 type ICardInformation = {
-  data: IInformation;
+  data: IDataInformation;
   isFirst?: boolean;
 };
 
-const CardInformation = ({ data, isFirst }: ICardInformation) => {
+const InformationCard = ({ data, isFirst }: ICardInformation) => {
   return (
     <div
       className={cx(
@@ -34,4 +34,4 @@ const CardInformation = ({ data, isFirst }: ICardInformation) => {
   );
 };
 
-export default CardInformation;
+export default InformationCard;

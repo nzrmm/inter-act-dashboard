@@ -1,17 +1,17 @@
-import CardProfit from "@/routes/home/components/card-profit";
-import CardOrders from "@/routes/home/components/card-orders";
-import CardBalance from "@/routes/home/components/card-balance";
-import CardEarnings from "@/routes/home/components/card-earnings";
-import CardInformation from "@/routes/home/components/card-information";
-import CardTotalProfit from "@/routes/home/components/card-total-profit";
-import CardActivityOverview from "@/routes/home/components/card-activity-overview";
+import OrderChart from "@/routes/home/components/order-chart";
+import ProfitChart from "@/routes/home/components/profit-chart";
+import BalanceChart from "@/routes/home/components/balance-chart";
+import EarningChart from "@/routes/home/components/earning-chart";
+import InformationCard from "@/routes/home/components/information-card";
+import TotalProfitChart from "@/routes/home/components/total-profit-chart";
+import ActivityOverviewCard from "@/routes/home/components/activity-overview-card";
 
 export {
-  CardProfit,
-  CardOrders,
-  CardBalance,
-  CardEarnings,
-  CardInformation,
-  CardTotalProfit,
-  CardActivityOverview,
+  OrderChart,
+  ProfitChart,
+  BalanceChart,
+  EarningChart,
+  TotalProfitChart,
+  InformationCard,
+  ActivityOverviewCard,
 };

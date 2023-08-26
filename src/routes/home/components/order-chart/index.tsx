@@ -54,7 +54,7 @@ const data: ChartData<"bar"> = {
   ],
 };
 
-const CardOrders = () => {
+const OrderChart = () => {
   return (
     <div className={cx("w-3/12 h-full bg-dark-04 rounded-md px-6 py-5")}>
       <div className={cx("mb-8")}>
@@ -71,4 +71,4 @@ const CardOrders = () => {
   );
 };
 
-export default CardOrders;
+export default OrderChart;

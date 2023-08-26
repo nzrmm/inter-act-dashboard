@@ -12,7 +12,7 @@ import { Dot, Dropdown } from "@/components/commons";
 import { earningDateOptions } from "@/data";
 import { IOption } from "@/types/data";
 
-const CardEarnings = () => {
+const EarningChart = () => {
   const [data, setData] = useState<IOption>(earningDateOptions[0]);
 
   return (
@@ -75,4 +75,4 @@ const CardEarnings = () => {
   );
 };
 
-export default CardEarnings;
+export default EarningChart;
