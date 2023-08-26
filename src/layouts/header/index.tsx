@@ -11,7 +11,7 @@ const Header = () => {
         <div
           className={cx(
             "relative w-9 h-9 rounded-full",
-            "bg-[#B5B4B4] border border-white"
+            "bg-[#B5B4B4] border border-white",
           )}
         >
           <Dot customClassName={cx("absolute -right-1 top-1 bg-[#5CCC5A]")} />

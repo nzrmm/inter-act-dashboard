@@ -39,7 +39,7 @@ const Dropdown = ({ options, onChange, ...props }: IDropdown) => {
               "font-bold text-custom-green-01 border border-custom-green-01 rounded-md px-3 py-2":
                 props.variant === "outline",
               "text-dark-06": props.variant === "default",
-            }
+            },
           )}
           onClick={handleSetToggleOpen}
         >
@@ -53,7 +53,7 @@ const Dropdown = ({ options, onChange, ...props }: IDropdown) => {
           <ul
             className={cx(
               "absolute left-0 w-[130px] bg-dark-05",
-              "rounded-md overflow-hidden cursor-pointer mt-2"
+              "rounded-md overflow-hidden cursor-pointer mt-2",
             )}
           >
             {options.map((option, index) => {

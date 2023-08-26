@@ -27,7 +27,7 @@ const SidebarItem = ({ data, children }: ISidebarItem) => {
         {data?.value && (
           <div
             className={cx(
-              "w-[18px] h-[18px] flex justify-center items-center bg-custom-green-02 rounded-[4px]"
+              "w-[18px] h-[18px] flex justify-center items-center bg-custom-green-02 rounded-[4px]",
             )}
           >
             <span className={cx("text-xs font-medium")}>{data.value}</span>

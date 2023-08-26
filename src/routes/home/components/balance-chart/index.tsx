@@ -24,7 +24,7 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
 );
 
 const options: ChartOptions<"line"> = {
@@ -67,7 +67,7 @@ const BalanceChart = () => {
   return (
     <div
       className={cx(
-        "w-1/3 h-full bg-dark-04 rounded-e-md px-5 py-6 border-l border-dark-05"
+        "w-1/3 h-full bg-dark-04 rounded-e-md px-5 py-6 border-l border-dark-05",
       )}
     >
       <div className={cx("flex flex-col items-center")}>

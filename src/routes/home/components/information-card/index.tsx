@@ -15,7 +15,7 @@ const InformationCard = ({ data, isFirst }: ICardInformation) => {
         {
           "bg-custom-green-01": isFirst,
           "bg-dark-04": !isFirst,
-        }
+        },
       )}
     >
       {data.icon}

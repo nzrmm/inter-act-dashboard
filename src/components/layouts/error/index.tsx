@@ -9,7 +9,7 @@ const Error = () => {
   return (
     <div
       className={cx(
-        "w-screen h-screen flex flex-col justify-center items-center bg-dark-01"
+        "w-screen h-screen flex flex-col justify-center items-center bg-dark-01",
       )}
     >
       <div className={cx("text-center mb-12")}>
