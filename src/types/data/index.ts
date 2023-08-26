@@ -64,3 +64,9 @@ export type IDataTotalProfit = {
   earning: number;
   expense: number;
 };
+
+export type IDataBalance = {
+  totalInThisYear: string | number;
+  totalInLatestMonth: string | number;
+  values: { label: string; balance: number }[];
+};

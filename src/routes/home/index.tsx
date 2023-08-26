@@ -3,6 +3,7 @@ import cx from "classnames";
 import {
   CardProfit,
   CardOrders,
+  CardBalance,
   CardEarnings,
   CardInformation,
   CardTotalProfit,
@@ -38,7 +39,7 @@ const Home = () => {
             </div>
             <div className={cx("flex-1 flex")}>
               <CardTotalProfit />
-              <div className={cx("w-1/3")}>Hello</div>
+              <CardBalance />
             </div>
           </div>
         </div>

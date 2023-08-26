@@ -1,5 +1,6 @@
 import {
   IOption,
+  IDataBalance,
   IInformation,
   IDataTotalProfit,
   IActivityOverview,
@@ -162,3 +163,21 @@ export const dataTotalProfit: IDataTotalProfit[] = [
   { label: "Aug", earning: 280, expense: -80 },
   { label: "Sep", earning: 100, expense: -120 },
 ];
+
+export const dataBalance: IDataBalance = {
+  totalInThisYear: "$842.98",
+  totalInLatestMonth: "$426.20",
+  values: [
+    { label: "Jan", balance: 300 },
+    { label: "Feb", balance: 100 },
+    { label: "Mar", balance: 320 },
+    { label: "Apr", balance: 140 },
+    { label: "May", balance: 180 },
+    { label: "Jun", balance: 40 },
+    { label: "Jul", balance: 480 },
+    { label: "Aug", balance: 240 },
+    { label: "Sep", balance: 230 },
+    { label: "Oct", balance: 20 },
+    { label: "Nov", balance: 310 },
+  ],
+};

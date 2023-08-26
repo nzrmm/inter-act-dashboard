@@ -59,6 +59,7 @@ export const data: ChartData<"line"> = {
       data: dataProfit.values.map((item) => item.percentage),
       borderColor: "#0BB885",
       borderWidth: 3,
+      pointRadius: 0,
     },
   ],
 };
