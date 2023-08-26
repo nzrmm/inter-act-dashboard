@@ -34,7 +34,7 @@ const Dropdown = ({ options, onChange, ...props }: IDropdown) => {
         <div
           className={cx(
             "w-full flex justify-between items-center gap-1",
-            "text-[10px] bg-transparent cursor-pointer",
+            "text-xxs bg-transparent cursor-pointer",
             {
               "font-bold text-custom-green-01 border border-custom-green-01 rounded-md px-3 py-2":
                 props.variant === "outline",

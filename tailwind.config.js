@@ -32,6 +32,9 @@ export default {
           "01": "#FF814A",
         },
       },
+      fontSize: {
+        xxs: "10px",
+      },
     },
   },
   plugins: [],
