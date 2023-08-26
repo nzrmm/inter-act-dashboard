@@ -1,6 +1,8 @@
 import cx from "classnames";
 import { Link } from "react-router-dom";
 
+import { Breadcrumb } from "@/components/commons";
+
 import {
   CardProfit,
   CardOrders,
@@ -17,9 +19,10 @@ const Home = () => {
   return (
     <section>
       <div className={cx("mb-8")}>
-        <p className={cx("font-bold text-3xl tracking-wide")}>
+        <p className={cx("font-bold text-3xl tracking-wide mb-[10px]")}>
           Marketing Dashboard
         </p>
+        <Breadcrumb />
       </div>
 
       <div className={cx("grid grid-cols-5 gap-6 mb-6")}>
