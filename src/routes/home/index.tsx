@@ -10,7 +10,7 @@ import {
   CardActivityOverview,
 } from "@/routes/home/components";
 
-import { informations } from "@/data";
+import { dataInformations } from "@/data";
 
 const Home = () => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
       </div>
 
       <div className={cx("grid grid-cols-5 gap-6 mb-6")}>
-        {informations.map((item, index) => {
+        {dataInformations.map((item, index) => {
           return (
             <CardInformation key={index} data={item} isFirst={index === 0} />
           );

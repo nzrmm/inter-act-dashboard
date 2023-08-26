@@ -3,11 +3,11 @@ import cx from "classnames";
 import { Timeline, TimelineItem } from "@/components/commons";
 import { ICArrowUp } from "@/assets/svgs";
 
-import { activityOverviews } from "@/data";
-import { IActivityOverview } from "@/types/data";
+import { dataActivityOverviews } from "@/data";
+import { IDataActivityOverview } from "@/types/data";
 
 const CardActivityOverview = () => {
-  const renderTimelineDescription = (item: IActivityOverview) => {
+  const renderTimelineDescription = (item: IDataActivityOverview) => {
     switch (item.type) {
       case "mentioned":
         return (
@@ -64,7 +64,7 @@ const CardActivityOverview = () => {
       </div>
 
       <Timeline>
-        {activityOverviews.map((item, index) => {
+        {dataActivityOverviews.map((item, index) => {
           return (
             <TimelineItem key={index}>
               <p className={cx("text-sm text-custom-gray-03 mb-1")}>

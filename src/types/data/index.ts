@@ -1,4 +1,4 @@
-export type IInformation = {
+export type IDataInformation = {
   icon: React.ReactNode;
   name: string | number;
   value: string | number;
@@ -37,7 +37,7 @@ type ISuspendedActivity = {
   date: string;
 };
 
-export type IActivityOverview =
+export type IDataActivityOverview =
   | IMentionedActivity
   | IRemovedActivity
   | IPublishedActivity

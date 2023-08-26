@@ -1,10 +1,10 @@
 import {
   IOption,
   IDataBalance,
-  IInformation,
+  IDataInformation,
   IDataTotalProfit,
-  IActivityOverview,
   IDataChartWithTotal,
+  IDataActivityOverview,
 } from "@/types/data";
 
 import {
@@ -15,7 +15,7 @@ import {
   ICCalendar,
 } from "@/assets/svgs";
 
-export const informations: IInformation[] = [
+export const dataInformations: IDataInformation[] = [
   { icon: <ICPieChart />, name: "Total Cost", value: "$31.868" },
   { icon: <ICTrophy />, name: "Total Sales", value: "$66,053" },
   { icon: <ICCalendar />, name: "This Week", value: "$35,000,00" },
@@ -23,7 +23,7 @@ export const informations: IInformation[] = [
   { icon: <ICWallet />, name: "$1250", value: "Last payment" },
 ];
 
-export const activityOverviews: IActivityOverview[] = [
+export const dataActivityOverviews: IDataActivityOverview[] = [
   {
     type: "mentioned",
     from: "Nick Mark",
@@ -58,40 +58,22 @@ export const earningDateOptions: IOption[] = [
   {
     label: "Last Week",
     value: {
-      sales: {
-        percentage: 80,
-        total: "251K",
-      },
-      orders: {
-        percentage: 60,
-        total: "176K",
-      },
+      sales: { percentage: 80, total: "251K" },
+      orders: { percentage: 60, total: "176K" },
     },
   },
   {
     label: "2 Weeks ago",
     value: {
-      sales: {
-        percentage: 50,
-        total: "165K",
-      },
-      orders: {
-        percentage: 40,
-        total: "147K",
-      },
+      sales: { percentage: 50, total: "165K" },
+      orders: { percentage: 40, total: "147K" },
     },
   },
   {
     label: "Last Month",
     value: {
-      sales: {
-        percentage: 85,
-        total: "465K",
-      },
-      orders: {
-        percentage: 75,
-        total: "342K",
-      },
+      sales: { percentage: 85, total: "465K" },
+      orders: { percentage: 75, total: "342K" },
     },
   },
 ];
@@ -99,56 +81,23 @@ export const earningDateOptions: IOption[] = [
 export const dataOrder: IDataChartWithTotal = {
   total: "189k",
   values: [
-    {
-      label: "January",
-      percentage: 30,
-    },
-    {
-      label: "February",
-      percentage: 80,
-    },
-    {
-      label: "March",
-      percentage: 50,
-    },
-    {
-      label: "April",
-      percentage: 20,
-    },
-    {
-      label: "May",
-      percentage: 60,
-    },
+    { label: "Jan", percentage: 30 },
+    { label: "Feb", percentage: 80 },
+    { label: "Mar", percentage: 50 },
+    { label: "Apr", percentage: 20 },
+    { label: "May", percentage: 60 },
   ],
 };
 
 export const dataProfit: IDataChartWithTotal = {
   total: "8,29k",
   values: [
-    {
-      label: "January",
-      percentage: 0,
-    },
-    {
-      label: "February",
-      percentage: 20,
-    },
-    {
-      label: "March",
-      percentage: 10,
-    },
-    {
-      label: "April",
-      percentage: 30,
-    },
-    {
-      label: "May",
-      percentage: 20,
-    },
-    {
-      label: "June",
-      percentage: 40,
-    },
+    { label: "Jan", percentage: 0 },
+    { label: "Feb", percentage: 20 },
+    { label: "Mar", percentage: 10 },
+    { label: "Apr", percentage: 30 },
+    { label: "May", percentage: 20 },
+    { label: "Jun", percentage: 40 },
   ],
 };
 
