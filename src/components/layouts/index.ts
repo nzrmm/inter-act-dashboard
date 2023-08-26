@@ -1,3 +1,4 @@
+import Error from "@/components/layouts/error";
 import SidebarItem from "@/components/layouts/sidebar-item";
 
-export { SidebarItem };
+export { Error, SidebarItem };
